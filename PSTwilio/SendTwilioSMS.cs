@@ -1,5 +1,9 @@
-﻿/* Russell Webster <russ@rwebster.co.uk>
- * 
+﻿/* Russell Webster <russ@rwebster.co.uk> - https://pishposh.io/
+ *	> PSTwilio
+ *		- Quick and dirty PowerShell module that allows sending over SMS messages via Twilio's service
+ *		- Usage: Send-TwilioSMS -AccountSid <accountSid> -AuthToken <authToken> -From <twilioPhoneNumber> -To <destinationNumber> -MessageBody <message>
+ *	> Changelog
+ *		- v0.1 - Send-TwilioSMS: Constructs and sends REST requests to Twilio's SMS endpoint, returns a RestSharp.IRestResponse to the PS host
  * */
 using System.Management.Automation;
 using RestSharp;
